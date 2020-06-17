@@ -1,0 +1,71 @@
+{
+    "enabled": true,
+    "coin": "dalecoin.json",
+
+    "auxes": [],
+    "address": "DYZkNEfLnatqQHnkNmCKnV5zegbPyibLbK",
+
+    "rewardRecipients": {
+        "DYZkNEfLnatqQHnkNmCKnV5zegbPyibLbK": 1.5,
+        "DYZkNEfLnatqQHnkNmCKnV5zegbPyibLbK": 0.1
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 30,
+        "minimumPayment": 0.01,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 11115,
+            "user": "dalecoinrpc",
+            "password": "anypassword"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 8
+        },
+        "3032": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 11115,
+            "user": "dalecoinrpc",
+            "password": "anypassword"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": false,
+        "autoCreateWorker": false
+    }
+
+}
