@@ -1,0 +1,6 @@
+{
+    "name": "Dalecoin",
+    "symbol": "DALC",
+    "algorithm": "scrypt",
+    "mposDiffMultiplier": 256
+}
